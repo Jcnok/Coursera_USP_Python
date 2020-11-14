@@ -1,0 +1,10 @@
+a= int(input("Digite um número inteiro: "))
+b=a%10
+c=a//10
+soma=0
+while b != 0:
+    if b>0:
+        b=a%10
+        a=a//10
+    soma = soma + b
+print (soma)
