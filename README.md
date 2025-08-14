@@ -1,63 +1,44 @@
-# Coursera USP Python
+# Portfólio de Scripts Python - Curso USP/Coursera
 
-## Sobre o Repositório
+Este repositório contém os projetos e exercícios desenvolvidos durante o curso **"Python para Análise de Dados"** da USP na plataforma Coursera. Originalmente servindo como um registro pessoal de aprendizado, este projeto foi aprimorado para se tornar um portfólio interativo.
 
-Este repositório contém os projetos e exercícios desenvolvidos durante o curso "Python para Análise de Dados" oferecido pela Universidade de São Paulo (USP) na plataforma Coursera.
+## Portfólio Interativo Online
 
-O curso abrange os fundamentos da linguagem de programação Python, com foco em sua aplicação na área de Análise de Dados. Ao longo do curso, são abordados tópicos como:
+Uma página web foi criada para permitir que qualquer pessoa execute a maioria dos scripts deste repositório diretamente no navegador. A página utiliza **Pyodide** para criar um ambiente Python funcional no lado do cliente.
 
-- Introdução à Programação em Python
-- Estruturas de Dados em Python
-- Funções e Módulos
-- Manipulação de Arquivos
-- Análise Exploratória de Dados
-- Visualização de Dados
+### **[Acesse o Portfólio Interativo Aqui](https://jcnok.github.io/Coursera_USP_Python/)**
 
-## Tecnologias Utilizadas
+[![Prévia do Portfólio](https://i.imgur.com/your-image-url.png)](https://jcnok.github.io/Coursera_USP_Python/)  <!-- TODO: Adicionar um URL de imagem de prévia -->
 
-- **Python**: Linguagem de programação utilizada no curso.
-- **Jupyter Notebook**: Ambiente de desenvolvimento interativo utilizado para a criação e execução dos códigos.
-- **Bibliotecas Python**: Pandas, Matplotlib, Numpy, entre outras, utilizadas para a análise e visualização de dados.
+### Funcionalidades
 
-## Contribuição
+- **Execução de Código Python:** Selecione um script em um menu e execute-o com um clique.
+- **Visualização de Código:** Veja o código-fonte de cada script antes de executá-lo.
+- **Terminal de Saída:** Observe a saída do script, incluindo textos e gráficos.
+- **Suporte a Dependências:** Bibliotecas como `numpy`, `pandas` e `matplotlib` são carregadas dinamicamente.
+- **Conversão de Notebooks:** Arquivos `.ipynb` são automaticamente convertidos para scripts `.py` executáveis.
 
-Este repositório serve como um registro do meu aprendizado durante o curso de Python para Análise de Dados da USP. Sinta-se à vontade para explorar os arquivos, fazer sugestões ou reportar quaisquer problemas.
+## Como Contribuir ou Adicionar Novos Scripts
+
+Se você deseja adicionar um novo script a este portfólio, siga os passos abaixo:
+
+1.  **Adicione seu arquivo `.py` ou `.ipynb`** à raiz do projeto.
+2.  **(Opcional mas recomendado)** Adicione um bloco de comentários (docstring) no topo do seu script explicando o que ele faz e um bloco `if __name__ == "__main__":` para que ele execute um exemplo quando rodado diretamente.
+3.  **Execute o script de build** no seu terminal para atualizar a página web:
+    ```bash
+    python3 build.py
+    ```
+4.  **Faça o commit e o push** das suas alterações. O GitHub Pages atualizará o site automaticamente.
+
+## Limitações Conhecidas
+
+- O script `ordenação.py` não foi incluído no portfólio devido a um problema de codificação de caracteres no ambiente de build que impedia sua manipulação.
+- Alguns scripts que requerem dependências muito específicas ou que interagem com o sistema de arquivos local de formas complexas podem não funcionar corretamente no ambiente do navegador.
 
 ## Contato
 
-Se você tiver alguma dúvida ou quiser entrar em contato, você pode me encontrar em:
+Para dúvidas, sugestões ou para entrar em contato:
 
-- [LinkedIn](https://www.linkedin.com/in/juliookuda/)
-- [GitHub](https://github.com/Jcnok)
-- E-mail: jcnok@hotmail.com
-
----
-
-## Portfólio Interativo de Scripts
-
-Este repositório foi aprimorado com uma página de portfólio interativa que permite executar a maioria dos scripts e notebooks diretamente no seu navegador!
-
-### Como Acessar o Portfólio
-
-1.  **Ative o GitHub Pages:**
-    *   Vá para a aba **"Settings"** (Configurações) do seu repositório no GitHub.
-    *   No menu lateral, clique em **"Pages"**.
-    *   Em "Build and deployment", na seção "Source", selecione **"Deploy from a branch"**.
-    *   Na seção "Branch", selecione a branch `main` (ou `master`) e a pasta `/docs`.
-    *   Clique em **"Save"**.
-    *   Aguarde alguns minutos e sua página estará disponível no endereço fornecido pelo GitHub (algo como `https://<seu-usuario>.github.io/<nome-do-repositorio>/`).
-
-### Como Atualizar o Portfólio
-
-Sempre que você adicionar um novo script (`.py`) ou notebook (`.ipynb`) a este repositório, você precisa atualizar a lista de scripts disponíveis na página. Para fazer isso, execute o seguinte comando no seu terminal local (na pasta do projeto):
-
-```bash
-python3 build.py
-```
-
-Este comando irá:
-*   Converter seus notebooks para scripts Python.
-*   Copiar todos os scripts para a pasta `scripts_para_execucao`.
-*   Atualizar a lista de scripts que aparece na página da web.
-
-Após executar o comando, faça o commit e o push das alterações para o GitHub, e a sua página será atualizada automaticamente.
+- **LinkedIn**: [juliookuda](https://www.linkedin.com/in/juliookuda/)
+- **GitHub**: [Jcnok](https://github.com/Jcnok)
+- **E-mail**: jcnok@hotmail.com
