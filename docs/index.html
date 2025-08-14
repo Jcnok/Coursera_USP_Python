@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Scripts Python</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Pyodide -->
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.25.1/full/pyodide.js"></script>
+</head>
+<body>
+
+    <header>
+        <h1>Meu Portfólio de Scripts Python</h1>
+        <p>Selecione um script abaixo e clique em "Executar" para vê-lo em ação!</p>
+    </header>
+
+    <main>
+        <div class="controls">
+            <label for="script-selector">Escolha um script:</label>
+            <select id="script-selector">
+                <option>Carregando scripts...</option>
+            </select>
+            <button id="run-button">Executar</button>
+        </div>
+
+        <div class="content-area">
+            <div class="code-view">
+                <h2>Código Fonte</h2>
+                <pre><code id="code-display"></code></pre>
+            </div>
+            <div class="terminal">
+                <h2>Saída (Terminal)</h2>
+                <pre id="output-display">A saída do script aparecerá aqui...</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desenvolvido com Pyodide e GitHub Pages</p>
+    </footer>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

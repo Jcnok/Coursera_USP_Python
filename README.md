@@ -30,3 +30,34 @@ Se você tiver alguma dúvida ou quiser entrar em contato, você pode me encontr
 - [LinkedIn](https://www.linkedin.com/in/juliookuda/)
 - [GitHub](https://github.com/Jcnok)
 - E-mail: jcnok@hotmail.com
+
+---
+
+## Portfólio Interativo de Scripts
+
+Este repositório foi aprimorado com uma página de portfólio interativa que permite executar a maioria dos scripts e notebooks diretamente no seu navegador!
+
+### Como Acessar o Portfólio
+
+1.  **Ative o GitHub Pages:**
+    *   Vá para a aba **"Settings"** (Configurações) do seu repositório no GitHub.
+    *   No menu lateral, clique em **"Pages"**.
+    *   Em "Build and deployment", na seção "Source", selecione **"Deploy from a branch"**.
+    *   Na seção "Branch", selecione a branch `main` (ou `master`) e a pasta `/docs`.
+    *   Clique em **"Save"**.
+    *   Aguarde alguns minutos e sua página estará disponível no endereço fornecido pelo GitHub (algo como `https://<seu-usuario>.github.io/<nome-do-repositorio>/`).
+
+### Como Atualizar o Portfólio
+
+Sempre que você adicionar um novo script (`.py`) ou notebook (`.ipynb`) a este repositório, você precisa atualizar a lista de scripts disponíveis na página. Para fazer isso, execute o seguinte comando no seu terminal local (na pasta do projeto):
+
+```bash
+python3 build.py
+```
+
+Este comando irá:
+*   Converter seus notebooks para scripts Python.
+*   Copiar todos os scripts para a pasta `scripts_para_execucao`.
+*   Atualizar a lista de scripts que aparece na página da web.
+
+Após executar o comando, faça o commit e o push das alterações para o GitHub, e a sua página será atualizada automaticamente.
