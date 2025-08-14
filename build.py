@@ -11,6 +11,7 @@ DOCS_DIR = 'docs'
 SCRIPTS_DIR = os.path.join(DOCS_DIR, 'scripts')
 JSON_OUTPUT_FILE = os.path.join(DOCS_DIR, 'scripts.json')
 ALLOWED_EXTENSIONS = ['.py', '.ipynb']
+FILES_TO_IGNORE = ['build.py', 'ordenação.py', 'migrate_files.py', 'batch_update_scripts.py']
 
 def slugify(filename):
     """
@@ -67,13 +68,16 @@ def main():
     os.makedirs(DOCS_DIR, exist_ok=True)
 
     script_filenames_for_json = []
-    files_to_process = [f for f in os.listdir(ROOT_DIR) if os.path.isfile(f)]
+
+    # Process files from the root directory
+    all_files_in_root = [f for f in os.listdir(ROOT_DIR) if os.path.isfile(f)]
+    files_to_process = [f for f in all_files_in_root if f not in FILES_TO_IGNORE]
 
     for filename in files_to_process:
         original_filepath = os.path.join(ROOT_DIR, filename)
         name, extension = os.path.splitext(filename)
 
-        if extension not in ALLOWED_EXTENSIONS or filename == 'build.py':
+        if extension not in ALLOWED_EXTENSIONS:
             continue
 
         if extension == '.py':
