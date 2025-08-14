@@ -153,10 +153,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            outputDisplay.textContent += '\nConfigurando ambiente para gráficos...\n';
-
-            // 2. Setup environment for plotting and I/O
-            const setup_code = `
+            // 2. Conditionally setup environment for plotting
+            const needsPlottingSetup = imports.includes('matplotlib') || imports.includes('seaborn');
+            if (needsPlottingSetup) {
+                outputDisplay.textContent += '\nConfigurando ambiente para gráficos...\n';
+                const setup_code = `
 import matplotlib
 import matplotlib.pyplot as plt
 import io
@@ -179,9 +180,11 @@ def _show_patched(*args, **kwargs):
         plt.close(fig)
 
 plt.show = _show_patched
-            `;
-            await py.runPythonAsync(setup_code);
+                `;
+                await py.runPythonAsync(setup_code);
+            }
 
+            // 3. Setup I/O and run code
             const originalPrint = py.globals.get('print');
             py.globals.set('print', (...args) => {
                 const text = args.map(String).join(' ');
@@ -189,24 +192,25 @@ plt.show = _show_patched
             });
             py.globals.set('input', (prompt_text = '') => window.prompt(prompt_text));
 
-            outputDisplay.textContent += 'Executando o script...\n====================\n\n';
+            outputDisplay.textContent += '\nExecutando o script...\n====================\n\n';
 
-            // 3. Run the user's code
             await py.runPythonAsync(code);
 
-            // 4. Retrieve and display plots
-            const figs = py.globals.get('js_figures');
-            if (figs) {
-                outputDisplay.textContent += '\n--- Gráficos Gerados ---\n';
-                figs.toJs().forEach(base64_string => {
-                    const img = document.createElement('img');
-                    img.src = `data:image/png;base64,${base64_string}`;
-                    img.style.maxWidth = '100%';
-                    img.style.marginTop = '1rem';
-                    img.style.border = '1px solid #ccc';
-                    outputDisplay.appendChild(img);
-                });
-                py.globals.delete('js_figures');
+            // 4. Conditionally retrieve and display plots
+            if (needsPlottingSetup) {
+                const figs = py.globals.get('js_figures');
+                if (figs) {
+                    outputDisplay.textContent += '\n--- Gráficos Gerados ---\n';
+                    figs.toJs().forEach(base64_string => {
+                        const img = document.createElement('img');
+                        img.src = `data:image/png;base64,${base64_string}`;
+                        img.style.maxWidth = '100%';
+                        img.style.marginTop = '1rem';
+                        img.style.border = '1px solid #ccc';
+                        outputDisplay.appendChild(img);
+                    });
+                    py.globals.delete('js_figures');
+                }
             }
 
             py.globals.set('print', originalPrint);
