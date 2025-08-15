@@ -15,3 +15,8 @@ def ordena(lista):
           minimo = j
       lista[i],lista[minimo] = lista[minimo],lista[i]  
   return lista
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

@@ -1,3 +1,9 @@
+"""
+[DESCRIÇÃO DO SCRIPT]
+
+Como usar:
+[INSTRUÇÕES DE USO]
+"""
 def tabuada():
    tab = 1
 
@@ -17,3 +23,9 @@ while x < 3:
         y = y + 1
     x = x + 1
         
+
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

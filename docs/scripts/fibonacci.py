@@ -27,3 +27,8 @@ import pytest
 
 def testa_fibonacci(entrada, esperado):
   assert fibonacci(entrada) == esperado
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

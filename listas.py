@@ -1,3 +1,9 @@
+"""
+[DESCRIÇÃO DO SCRIPT]
+
+Como usar:
+[INSTRUÇÕES DE USO]
+"""
 
 def remove_repetidos(lista):
      
@@ -21,3 +27,9 @@ remove_repetidos(lista)
     
     
     
+
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

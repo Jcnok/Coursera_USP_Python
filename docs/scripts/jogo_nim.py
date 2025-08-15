@@ -1,3 +1,9 @@
+"""
+[DESCRIÇÃO DO SCRIPT]
+
+Como usar:
+[INSTRUÇÕES DE USO]
+"""
 def computador_escolhe_jogada(n, m):
     Comp_Remove = 1 #var recebe 1
     while Comp_Remove != m:#enquanto var for diferente da var m faça;
@@ -80,3 +86,9 @@ else:#senão;
     if tipoDePartida == 1:#se a variável for 1;
         print()#espaço
         partida()#vai para função partida;
+
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

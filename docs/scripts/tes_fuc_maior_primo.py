@@ -1,3 +1,9 @@
+"""
+[DESCRIÇÃO DO SCRIPT]
+
+Como usar:
+[INSTRUÇÕES DE USO]
+"""
 def maior_primo(n):
  e_primo=primo(n)
  while e_primo!=0:
@@ -21,3 +27,9 @@ def primo(n):
 
 
 print(maior_primo(961))
+
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

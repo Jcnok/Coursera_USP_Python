@@ -15,3 +15,8 @@ def ordenada(lista):
      else:
        i+=1
    return True
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

@@ -38,3 +38,8 @@ import pytest
 ])
 def testa_busca_binaria(lista,valor,esperado):
   assert busca_binaria(lista, valor)==esperado
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass
