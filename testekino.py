@@ -1,3 +1,9 @@
+"""
+[DESCRIÇÃO DO SCRIPT]
+
+Como usar:
+[INSTRUÇÕES DE USO]
+"""
 import re
 
 def le_assinatura():
@@ -193,3 +199,9 @@ def main():
     print ("O autor do texto %d está infectado com COH-PIAH" %(texto_infectado+1))
     
 main()
+
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

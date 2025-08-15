@@ -29,3 +29,8 @@ class Triangulo:
       return self.c**2 == self.a**2 + self.b**2
   def semelhantes(self,triangulo):
     return triangulo.tipo_lado() == self.tipo_lado()
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

@@ -1,3 +1,9 @@
+"""
+[DESCRIÇÃO DO SCRIPT]
+
+Como usar:
+[INSTRUÇÕES DE USO]
+"""
 # Para n = 25, as hipotenusas são:
 # 5, 10, 13, 15, 17, 20, 25
 # note que cada número deve ser somado apenas uma vez. Assim:
@@ -50,3 +56,9 @@ def é_hipotenusa(x):
     return hipotenusa
 
 print(soma_hipotenusas(5))
+
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

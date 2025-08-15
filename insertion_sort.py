@@ -20,3 +20,8 @@ def insertion_sort(lista):
       lista[j+1] = var_temp
     i += 1  
   return lista
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

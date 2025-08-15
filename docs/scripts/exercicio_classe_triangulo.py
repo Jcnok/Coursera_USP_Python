@@ -13,3 +13,8 @@ class Triangulo:
     self.c = c
   def perimetro(self):
     return self.a + self.b + self.c
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

@@ -1,3 +1,9 @@
+"""
+[DESCRIÇÃO DO SCRIPT]
+
+Como usar:
+[INSTRUÇÕES DE USO]
+"""
 def maior_primo(x):
     while x > 2:
         if (x%2==0) or (x%100==1):
@@ -9,3 +15,8 @@ def maior_primo(x):
                 return(x)
                 break 
     return(x)
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

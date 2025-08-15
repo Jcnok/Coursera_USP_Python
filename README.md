@@ -8,22 +8,20 @@ Uma página web foi criada para permitir que qualquer pessoa execute a maioria d
 
 ### **[Acesse o Portfólio Interativo Aqui](https://jcnok.github.io/Coursera_USP_Python/)**
 
-[![Prévia do Portfólio](https://i.imgur.com/your-image-url.png)](https://jcnok.github.io/Coursera_USP_Python/)  <!-- TODO: Adicionar um URL de imagem de prévia -->
+### Funcionalidades Principais
 
-### Funcionalidades
+- **Execução de Código Python:** Selecione um script em um menu e execute-o com um único clique.
+- **Visualização de Código:** Analise o código-fonte de cada script antes de sua execução.
+- **Terminal de Saída Interativo:** Observe a saída do script, incluindo textos e gráficos gerados em tempo real.
+- **Suporte a Dependências:** Bibliotecas populares como `numpy`, `pandas` e `matplotlib` são carregadas dinamicamente.
+- **Conversão Automática de Notebooks:** Arquivos `.ipynb` são convertidos para scripts `.py` executáveis e incluídos no portfólio.
 
-- **Execução de Código Python:** Selecione um script em um menu e execute-o com um clique.
-- **Visualização de Código:** Veja o código-fonte de cada script antes de executá-lo.
-- **Terminal de Saída:** Observe a saída do script, incluindo textos e gráficos.
-- **Suporte a Dependências:** Bibliotecas como `numpy`, `pandas` e `matplotlib` são carregadas dinamicamente.
-- **Conversão de Notebooks:** Arquivos `.ipynb` são automaticamente convertidos para scripts `.py` executáveis.
+## Como Adicionar Seus Próprios Scripts
 
-## Como Contribuir ou Adicionar Novos Scripts
+Para expandir o portfólio com novos scripts, o processo é simples:
 
-Se você deseja adicionar um novo script a este portfólio, siga os passos abaixo:
-
-1.  **Adicione seu arquivo `.py` ou `.ipynb`** à raiz do projeto.
-2.  **(Opcional mas recomendado)** Adicione um bloco de comentários (docstring) no topo do seu script explicando o que ele faz e um bloco `if __name__ == "__main__":` para que ele execute um exemplo quando rodado diretamente.
+1.  **Adicione seu arquivo (`.py` ou `.ipynb`)** na raiz deste projeto.
+2.  **(Recomendado)** Para uma melhor experiência, adicione um bloco de comentários (docstring) no topo do seu script explicando sua função e um bloco `if __name__ == "__main__":` para demonstrar seu uso.
 3.  **Execute o script de build** no seu terminal para atualizar a página web:
     ```bash
     python3 build.py

@@ -20,3 +20,8 @@ class Triangulo:
       return 'isósceles'
     else:
       return 'escaleno'
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

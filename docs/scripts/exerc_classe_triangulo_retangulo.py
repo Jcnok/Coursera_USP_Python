@@ -27,3 +27,8 @@ class Triangulo:
       return self.b**2 == self.a**2 + self.c**2
     else:
       return self.c**2 == self.a**2 + self.b**2
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass

@@ -9,3 +9,10 @@ def menor_nome(nomes):
   menor = (min(list(map(len,lista_ok)))) #Encontrar o menor elemento da lista!
   lista_menor = [y for y in lista_ok if len(y)==menor] #Separando todos os nomes com menor valor em uma lista!
   return lista_menor[0] # retornando apenas o primeiro menor elemento da lista!
+
+
+
+# --- Bloco de Execução de Exemplo ---
+if __name__ == "__main__":
+    # TODO: Adicionar exemplo de execução com dados e prints.
+    pass
